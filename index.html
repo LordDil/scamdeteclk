@@ -1,43 +1,132 @@
-<main>
-    <section class="hero">
-        <MIDDLE></MIDDLE><h1>WELCOME</h1>
-        <h2>THIS IS THE SCAMDETECTOR LK</h2></MIDDLE>
-        
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scamm Detector SL – Main Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: #0a3d62;
+      color: white;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.4em;
+      margin: 10px 0 0;
+    }
 
-    <section class="signup-section">
-        <div class="form-container">
-            <h3>Join Our Community</h3>
-            <div class="tab-buttons">
-                <button class="tab-active" onclick="showTab('signin')">Sign In</button>
-                <button onclick="showTab('signup')">Sign Up</button>
-            </div>
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
-            <form id="signin" class="auth-form active">
-                <label for="sign-in-email">Email:</label>
-                <input type="email" id="sign-in-email" name="email" required>
-                
-                <label for="sign-in-password">Password:</label>
-                <input type="password" id="sign-in-password" name="password" required>
-                
-                <button type="submit" class="submit-button">Sign In</button>
-                <p class="form-note">Forgot Password? <a href="#">Click Here</a></p>
-            </form>
+    .forms {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .form-block {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    .form-block h2 {
+      margin-bottom: 20px;
+      font-size: 1.6em;
+      color: #0a3d62;
+    }
+    .form-block label {
+      display: block;
+      margin: 12px 0 4px;
+      font-size: 0.9em;
+      color: #555;
+    }
+    .form-block input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    .form-block button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      background: #0a3d62;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-block button:hover {
+      background: #06324a;
+    }
 
-            <form id="signup" class="auth-form hidden">
-                <label for="sign-up-name">Name:</label>
-                <input type="text" id="sign-up-name" name="name" required>
+    @media (max-width: 700px) {
+      .forms { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
 
-                <label for="sign-up-email">Email:</label>
-                <input type="email" id="sign-up-email" name="email" required>
-                
-                <label for="sign-up-password">Password:</label>
-                <input type="password" id="sign-up-password" name="password" required>
-                
-                <button type="submit" class="submit-button">Sign Up</button>
-                <p class="form-note">By signing up, you agree to our <a href="#">Terms</a>.</p>
-            </form>
-        </div>
-    </section>
+  <header>
+    <h1>WELCOME !</h1>
+    <p>This is the main page of <strong>Scamm Detector SL</strong></p>
+  </header>
 
-    </main>
+  <div class="container">
+    <div class="forms">
+      <!-- Sign Up Block -->
+      <div class="form-block">
+        <h2>Sign Up</h2>
+        <form action="#" method="post">
+          <label for="signup-name">Name</label>
+          <input type="text" id="signup-name" name="name" required>
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="email" required>
+
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="password" required>
+
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+
+      <!-- Sign In Block -->
+      <div class="form-block">
+        <h2>Sign In</h2>
+        <form action="#" method="post">
+          <label for="signin-email">Email</label>
+          <input type="email" id="signin-email" name="email" required>
+
+          <label for="signin-password">Password</label>
+          <input type="password" id="signin-password" name="password" required>
+
+          <button type="submit">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
