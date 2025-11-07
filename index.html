@@ -1,46 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name or Company Name | Home</title> <meta name="description" content="Welcome to my personal portfolio/website. I am a [Your Profession] specializing in [Key Skill 1] and [Key Skill 2].">
+<main>
+    <section class="hero">
+        <h1>Hi, I'm [Your Name]!</h1>
+        <h2>I Build Things on the Web.</h2>
+        <p>I am a passionate [Job Title] focused on creating engaging, accessible, and user-friendly digital experiences.</p>
+        <a href="portfolio.html" class="cta-button">View My Work</a>
+    </section>
 
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
+    <section class="signup-section">
+        <div class="form-container">
+            <h3>Join Our Community</h3>
+            <div class="tab-buttons">
+                <button class="tab-active" onclick="showTab('signin')">Sign In</button>
+                <button onclick="showTab('signup')">Sign Up</button>
+            </div>
 
-    <header>
-        <div class="logo">Your Name/Brand</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <form id="signin" class="auth-form active">
+                <label for="sign-in-email">Email:</label>
+                <input type="email" id="sign-in-email" name="email" required>
+                
+                <label for="sign-in-password">Password:</label>
+                <input type="password" id="sign-in-password" name="password" required>
+                
+                <button type="submit" class="submit-button">Sign In</button>
+                <p class="form-note">Forgot Password? <a href="#">Click Here</a></p>
+            </form>
 
-    <main class="hero">
-        <section>
-            <h1>Hi, I'm [Your Name]!</h1>
-            <h2>I Build Things on the Web.</h2>
-            <p>I am a passionate [Job Title] based in [Your City], focused on creating engaging, accessible, and user-friendly digital experiences.</p>
-            <a href="portfolio.html" class="cta-button">View My Work</a>
-        </section>
-    </main>
+            <form id="signup" class="auth-form hidden">
+                <label for="sign-up-name">Name:</label>
+                <input type="text" id="sign-up-name" name="name" required>
 
-    <footer>
-        <p>&copy; <span id="current-year"></span> [Your Name]. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://github.com/your-username" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+                <label for="sign-up-email">Email:</label>
+                <input type="email" id="sign-up-email" name="email" required>
+                
+                <label for="sign-up-password">Password:</label>
+                <input type="password" id="sign-up-password" name="password" required>
+                
+                <button type="submit" class="submit-button">Sign Up</button>
+                <p class="form-note">By signing up, you agree to our <a href="#">Terms</a>.</p>
+            </form>
         </div>
-    </footer>
-
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-</body>
-</html>
+    </section>
+    </main>

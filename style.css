@@ -1,0 +1,110 @@
+/* --- New Signup Section Styling --- */
+
+.signup-section {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background for contrast */
+    text-align: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+/* Tab Buttons (Sign In / Sign Up) */
+.tab-buttons {
+    display: flex;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tab-buttons button {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #eee;
+    color: #555;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-buttons button:hover {
+    background-color: #ddd;
+}
+
+.tab-buttons .tab-active {
+    background-color: #00bcd4; /* Accent color */
+    color: white;
+}
+
+/* Forms */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.auth-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.auth-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submit-button {
+    background-color: #333; /* Dark button for submission */
+    color: white;
+    padding: 12px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
+.form-note {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.form-note a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --- Hero Section Refinement --- */
+/* Ensure the Hero section text is readable over the background image */
+.hero {
+    background-color: #333; /* Fallback */
+    /* background image styles are already set in your original CSS */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
